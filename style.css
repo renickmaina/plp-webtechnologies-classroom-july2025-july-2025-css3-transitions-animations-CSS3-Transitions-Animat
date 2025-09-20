@@ -1,0 +1,62 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #f0f4ff;
+}
+
+#hoverBtn {
+  padding: 10px 20px;
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+#hoverBtn:hover {
+  transform: scale(1.2);
+  background: #364fc7;
+}
+
+#animateBox {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 20px auto;
+  border-radius: 12px;
+  transition: transform 1s;
+}
+
+.move {
+  transform: translateY(-100px) rotate(45deg);
+}
+
+#modal {
+  width: 250px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-200%);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+#modal.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 10px;
+}
